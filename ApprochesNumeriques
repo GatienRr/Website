@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="utf-8">
+<body>
+
+<h1>Histoires des sciences mathématiques et approche numérique</h1>
+
+<p>J'ai utilisé plusieurs axes pour exploiter informatiquement des données autour du groupe Bourbaki. Tous les travaux regroupés ici sont en cours et se basent sur des données à consolider.</p>
+
+<p>Les représentations présentés ici ne sont pas des indicateurs rigoureux mais, plutôt, des moyens de naviguer dans une quantité et une variété de données considérable. </p>
+
+<h2>Frises chronologiques et cartes pour la seconde guerre mondiale</h2>
+
+<p>Le contexte politique de la seconde guerre mondiale a eu des répercussions variées et parfois étonnantes sur les membres de Bourbaki. Des représentations adaptées permettent de saisir des problématiques contextuelles de cette époque. Par exemple le travail sur le livre de topologie générale effectué au début de l'année 1940 est largement influencé par la circulation des courriers et des colis, la proximité physique de Henri Cartan et Jean Dieudonné ainsi que d'une "période d'attente" pendant la guerre.</p>
+
+<div style="width: 70%;"><iframe width="1300" height="700" src="files/Leaflet4042.html" frameborder="0"></iframe> <em>Localisation des membres de Bourbaki à différentes dates entre 1940 et 1942.</em></div>
+
+<div style="width: 70%;"><iframe width="1300" height="600" src="files/DatesWWII.html" frameborder="0"></iframe> <em>Frise chronologique de la seconde guerre mondiale par rapport à quelques activités de Bourbaki entre 1940 et 1942</em></div>
+
+
+
+<h2>Exploitation de la base de données zbMath</h2>
+
+<p>J'ai signé une convention avec le FIZ Karlshruhe pour pouvoir exploiter une partie de la base de données de zbMath.</p>
+
+<p> Il faut prendre beaucoup de précautions en manipulant et exploitant ce type et une telle quantité de données. Il y a tout d'abord des problèmes d'exactitude et d'exhaustivité mais, pour commencer, la fiabilité de la base de données de zbMath m'a semblé être intéressant pour une étude large. </p>
+
+
+<h3>Fautes de frappes et doublons</h3>
+
+<p> Une telle base de données n'est pas homogène. Il faut donc unifier un certain nombre de points : essayez par exemple d'imaginer les différentes orthographes de Bartel Leendert van der Waerden que l'on peut trouver. Il ne me semble pas qu'il y ait des recettes miracles pour ce point et ai donc constitué un dictionnaire de corrections. Ce dernier est composé d'ajouts effectués au fur et à mesure de l'exploitation. Il faut également garder à l'esprit que cela peut induire des erreurs subtiles dans certaines représentations.</p>
+
+<p>Par suite il arrive qu'il y ait des doublons. On peut par exemple penser à des traductions qui peuvent biaiser certains chiffres ou de la double indexation avec les données du JFM autour de la seconde guerre mondiale. En fonction de la taille des données et de la précision souhaitée des méthode automatiques, semi-automatiques ou manuelles peuvent être envisagées. On peut juger que des entrées sont similaires en fonction de leurs concordence sur un certain nombres de points (auteur/s, titre, année, source). D'expérience il est généralement intéressant de prévoir des erreurs de comparaison à cause de faute de frappes en modulant avec la distance de Levenshtein.</p>
+
+
+
+<h3>L'exemple de Cartan</h3>
+
+<p>Sans proposer d'études numériques et/ou statistiques (qui nécessitent un important travail sur la nature des publications considérées ici), il est possible de mettre en avant certains aspects des corpus de publications des auteurs considérés. </p>
+
+<p>Voici un exemple d'outil par rapport à Cartan. C'est une partie d'une application qui permettra de choisir les auteurs et les point à présenter. Il est envisageable de développer un outil qui effectuera cela, automatiquement ou semi-automatiquement, à partir de n'importe quel relevé d'un auteur dans la base de zbMath.</p>
+
+<div style="width: 70%;"><iframe width="1300" height="590" src="files/CoAutCartan.html" frameborder="0"></iframe> <em>Coauteurs de Henri Cartan au cours de sa carrière : cliquer sur une publication pour afficher l'entrée sur le site de zbMath, double cliquer pour revenir au zoom originel</em></div>
+
+<div style="width: 70%;"><iframe width="1300" height="400" src="files/LanguesHC.html" frameborder="0"></iframe> <em>Langues de publications de Henri Cartan, cliquez sur FR pour supprimer l'affichage des publications en français.</em></div>
+
+
+
+<h3>Réseaux de citations et classification des écrits</h3>
+
+<p> Je n'ai pas encore trouvé d'axes rigoureux et pertinents pour étudier ces points. </p>
+
+
+
+<h2>Etude des archives Bourbaki : circulation des rédactions au sein du groupe</h2>
+
+<p>En l'absence de date et de signature sur la plupart des rédactions du groupe, il est difficile de suivre l'évolution des idées et des rédactions des différents livres des Eléments de mathématique au cours du temps. Un premier dégrossissage peut être effectué en relevant les mentions des rédactions dans le Bulletin du groupe (Réunion du traité d'analyse, Journal de Bourbaki et La Tribu).</p>
+
+<p>La grande difficulté de cette approche est dans les changements de plan général du traité : certaines parties subissent de nombreux changements de place ou de nom qu'il faut prendre en compte. Après plusieurs tests méthodologique je serai bientôt en mesure de représenter la circulation des rédactions chez les auteurs et des auteurs dans les livres du traité.</p>
+
+<p>A titre d'exemple, voici un relevé de données sur le premier livre de l'intégration que j'ai effectué dans le cadre de mon mémoire de master 2. On remarque en particulier la difficile problématique de hiérarchisation des informations disponibles.</p>
+
+<div style="width: 70%;"><iframe width="1300" height="400" src="files/ReleveIntegration.html" frameborder="0"></iframe> <em>Relevé de données sur le premier livre de l'intégration dans les archives Bourbaki.</em></div>
+
+<p>(La fonction "Search" permet déjà de montrer des tendances intéressantes : recherchez par exemple les mentions de "Dieudonné".) </p>
+
+
+
+
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+</body>
+</html>
